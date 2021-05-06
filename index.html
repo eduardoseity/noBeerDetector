@@ -4,7 +4,6 @@
         <title>No Beer Detector</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" crossorigin='anonymous')></script>
-        <script src="./model.json" crossorigin='anonymous')></script>
         <script src="./js/detector.js"></script>
         <style>
             #webcamDiv {
@@ -26,6 +25,7 @@
         </style>
     </head>
     <body>
+        <span id="modelSpan">Carregando modelo...</span>
         <!-- <span id="videoLoading">Video: waiting</span><br>
         <span id="modelLoading">Model: waiting</span>
         <div id="webcamDiv">
