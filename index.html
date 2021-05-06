@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>No Beer Detector</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" integrity="sha512-gQVBYBvfC+uyor5Teonjr9nmY1bN+DlOCezkhzg4ShpC5q81ogvFsr5IV4xXAj6HEtG7M1Pb2JCha97tVFItYQ==" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" crossorigin='anonymous')></script>
+        <script src="./model.json" crossorigin='anonymous')></script>
+        <script src="./js/detector.js"></script>
+        <style>
+            #webcamDiv {
+                position: relative;
+            }
+            #browserVideo {
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            #canvasDiv {
+                z-index: 10;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <span id="videoLoading">Video: waiting</span><br>
+        <span id="modelLoading">Model: waiting</span>
+        <div id="webcamDiv">
+            <img id="browserVideo" class="video-image" alt="video" src="http://192.168.0.101:8080/video">
+            <div id="canvasDiv">
+            </div>
+            <script>
+                let ratio = 2
+                let videoElement = document.getElementById("browserVideo");
+                videoElement.width = videoElement.width / ratio;
+                videoElement.height = videoElement.height / ratio;
+                let videoW = videoElement.width;
+                let videoH = videoElement.height;
+                let canvas = document.getElementById("canvasDiv")
+                canvas.width = videoW;
+                canvas.height = videoH;
+            </script>
+        </div> -->
+    </body>
+</html>
